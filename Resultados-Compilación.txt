@@ -1,0 +1,3 @@
+﻿1>------ Operación Compilar iniciada: proyecto: Votos, configuración: Debug Any CPU ------
+1>  Votos -> c:\users\estudiantes\source\repos\Votos\Votos\bin\Debug\Votos.exe
+========== Compilar: 1 correctos, 0 incorrectos, 0 actualizados, 0 omitidos ==========
