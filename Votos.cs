@@ -10,7 +10,7 @@ namespace Votos
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("\nVotos: ");
+             Console.WriteLine("\nVotos: ");
 
             Console.WriteLine("Numero de votos por el partido 1:  ");
             int a = int.Parse(Console.ReadLine());
@@ -32,26 +32,21 @@ namespace Votos
             Console.WriteLine("Numero total de votantes:  " + nv);
             Console.WriteLine("abstencion:  " + abstencion);
 
+           
+            bool tarea1 = nv > poblacion;
+            bool tarea2 = Math.Abs(a - b) < (nv * 10) / 100;
+            bool tarea3 = nv < (poblacion * 30) / 100;
 
-            bool x = anulados < (a + b) * 30 / 100;
-            bool y = (a + b) > blanco;
-            bool z = abstencion < nv;
-            bool i = a < b;
-            bool d = b < a;
-
-
-
-
-
-
-            if ((x || y) && z)
+            if ((tarea1 || tarea2) && tarea3)
+            {
+                Console.WriteLine("\n Se deben repetir las votaciones");
+            }
+            else
             {
                 Console.WriteLine("\n¡Las votaciones fueron exitosas!, si voto, ha ganado un descuento en Corral");
-                if (i) Console.WriteLine("Gano el partido 2");
+                if ((a > b)) Console.WriteLine("Gano el partido 2");
                 else Console.WriteLine("Gano el partido 1");
             }
-
-            else Console.WriteLine("\nLas votaciones se tienen que hacer otra vez :,(");
 
 
         }
