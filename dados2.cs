@@ -18,7 +18,7 @@ namespace dados2
 
             while (continuar == "s")
             {
-                dado1 = aleatorio.Next(10, 13);
+                dado1 = aleatorio.Next(1, 13);
                 Console.WriteLine("Dado 1: " + dado1);
                 contador2 += 1;
                 Console.WriteLine("Tiradas: " + contador2);
